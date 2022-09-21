@@ -25,7 +25,14 @@ html {
 
 .PhotoLycée {
     position: absolute;
-    top: 1px;
+    top: 70px;
     border-radius: 10px;
 
+}
+h1 {
+   position: absolute;
+   margin: 0 auto;
+   z-index: 1;
+   top: 20px;
+   font-size:35px;
 }
