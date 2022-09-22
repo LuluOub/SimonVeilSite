@@ -1,13 +1,21 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
 :root {
     --Background: #ffffff;
-    --Ruban: hsl(204, 100%, 50%);
+    --Ruban: hsl(220, 5%, 12%);
     --Couleur-Des-Lettres: hsl(255, 255%, 255%);
     --Couleur-anexe: hsl(237, 100%, 28%);
     --Couleur-hover: hsl(34, 20%, 79%);
+
 }
 
 body {
-    background-color: var(--Background);
+    background-color: var(--Ruban);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,17 +30,55 @@ html {
     box-sizing: border-box;
 }
 
-
-.PhotoLycée {
-    position: absolute;
-    top: 70px;
+.barrehorizontale{
+    background-color: white;
+    width: 1850px;
     border-radius: 10px;
+    height: 5px;
+    position: absolute;
+    top: 100px;
+
 
 }
-h1 {
-   position: absolute;
-   margin: 0 auto;
-   z-index: 1;
-   top: 20px;
-   font-size:35px;
+
+.navbar {
+    position: absolute;
+    padding: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    top: 0px;
+
+
+}
+.navbar a {
+    color: white;
+}
+
+
+.navbar .Logo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+.navbar .nav-links ul li.active a {
+    color: #ed3c57;
+    font-weight: 600;
+ }
+
+@media screen and (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
 }
